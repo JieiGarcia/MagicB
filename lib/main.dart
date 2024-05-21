@@ -35,15 +35,15 @@ class _MagicBodyState extends State<MagicBody> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: TextButton(
-        child: Expanded(
+      child: Expanded(
+        child: TextButton(
           child: Image.asset('images/ball$ballN.png'),
+          onPressed: () {
+            setState(() {
+              buttonP();
+            });
+          },
         ),
-        onPressed: () {
-          setState(() {
-            buttonP();
-          });
-        },
       ),
     );
   }
